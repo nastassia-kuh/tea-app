@@ -1,0 +1,25 @@
+<div class="container-lg text-center">
+
+
+  <div class=" mb-5 mt-5">
+    <div>
+      <img src="assets/images/slider-3.jpg" alt="1">
+    </div>
+  </div>
+
+  <h2 class="mb-5">Ответы на часто задаваемые вопросы</h2>
+  <div class="row mb-5">
+    <div class="col-lg-8" style="margin: 0 auto">
+
+      <ngbd-accordion-toggle></ngbd-accordion-toggle>
+    </div>
+  </div>
+
+  <div class="popup" *ngIf="popupShow">
+    <div class="popup-window">
+      <button class="close-popup" (click)="close()">Закрыть</button>
+      <h2 class="popup-title">Посмотрите наши чайные коллекции</h2>
+      <button class="see-collection btn btn-outline-primary" routerLink="/products">Смотреть</button>
+    </div>
+  </div>
+</div>

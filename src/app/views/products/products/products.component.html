@@ -1,0 +1,18 @@
+
+<div class="container-lg text-center">
+  <h2 class="mb-5 mt-3">Наши чайные коллекции</h2>
+  <div class="row row-cols-xl-4 row-cols-lg-3  justify-content-center mb-5">
+
+      <div class="card mx-1 mt-3" *ngFor="let product of products">
+        <a class="popup-link">
+          <img src="{{product.image}}" class="card-img-top" alt="..." [style]=" 'width: 60%'">
+        </a>
+        <div class="card-body text-start">
+          <h5 class="card-title">{{product.title}}</h5>
+          <h6 class="card-price">{{product.price}} руб.</h6>
+          <a href="#" class="btn btn-outline-primary" [routerLink]="[product.id]">Подробнее</a>
+        </div>
+      </div>
+  </div>
+</div>
+
